@@ -1,3 +1,5 @@
-.grid{
-  text-justify:auto
-}
+/* Resets Globais */
+@import "./reset.css";
+
+/* Grit Template */
+@import "./grid.css";

@@ -1,0 +1,28 @@
+.grid-template {
+  display: grid;
+  grid-template-columns: minmax(150px, 1fr) 3fr 300px;
+  grid-template-areas:
+    "header header header"
+    "sidenav content anuncio"
+    "footer footer footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.sidenav {
+  grid-area: sidenav;
+}
+
+.content {
+  grid-area: content;
+}
+
+.anuncio {
+  grid-area: anuncio;
+}
+
+.footer {
+  grid-area: footer;
+}
