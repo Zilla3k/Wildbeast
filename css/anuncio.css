@@ -1,0 +1,7 @@
+.anuncio {
+  background-color: #fafbfc;
+  display: grid;
+  align-content: start;
+  padding: 40px;
+  gap: 40px;
+}
