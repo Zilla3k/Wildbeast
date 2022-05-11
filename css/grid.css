@@ -26,3 +26,24 @@
 .footer {
   grid-area: footer;
 }
+@media (max-width: 1200px) {
+  .grid-template {
+    grid-template-areas:
+      "header header header"
+      "sidenav content content"
+      "sidenav anuncio anuncio"
+      "footer footer footer";
+  }
+}
+
+@media (max-width: 800px) {
+  .grid-template {
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "header"
+      "sidenav"
+      "content"
+      "anuncio"
+      "footer";
+  }
+}

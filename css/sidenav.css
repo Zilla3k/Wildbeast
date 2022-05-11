@@ -3,7 +3,7 @@
   padding: 40px;
 }
 
-.sidenav-img li a {
+.sidenav li a {
   display: block;
   min-width: 60px;
   max-width: 100px;
@@ -15,6 +15,46 @@
   transition: 0.1s;
 }
 
-.sidenav-img li a:hover {
+.sidenav li a:hover {
   background-color: #b07dfb;
+}
+
+@keyframes seta {
+  from {
+    right: 30px;
+  }
+  to {
+    right: 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .sidenav {
+    position: relative;
+  }
+  .sidenav::after {
+    content: "➜";
+    position: absolute;
+    top: -3px;
+    right: 30px;
+    color: rgba(0, 0, 0, 0.3);
+    animation: seta 0.5s ease-in 0s infinite alternate;
+  }
+}
+
+@media (max-width: 800px) {
+  .sidenav {
+    padding: 0 30px;
+  }
+  .sidenav ul {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+  }
+  .sidenav li {
+    flex: 1 0 60px;
+  }
+  .sidenav li a {
+    margin-top: 20px;
+  }
 }

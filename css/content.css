@@ -114,3 +114,9 @@ p {
 .attributes li + li {
   border-top: 2px solid #b07dfb;
 }
+
+@media (max-width: 450px) {
+  .content {
+    grid-template-columns: auto;
+  }
+}
