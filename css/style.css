@@ -10,6 +10,9 @@
 /* Sidenav Style */
 @import "./sidenav.css";
 
+/* Content Style */
+@import "./content.css";
+
 /* Anuncio Style */
 @import "./anuncio.css";
 

@@ -1,0 +1,116 @@
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.col-2 {
+  grid-column: 1/-1;
+}
+
+.img-1 {
+  grid-row: 3/5;
+  align-self: end;
+}
+.img-2 {
+  align-self: end;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  letter-spacing: -0.005em;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.info p + p {
+  margin-top: 30px;
+}
+
+.title {
+  color: #b07dfb;
+}
+.title h1 {
+  font-size: 3.75em;
+  line-height: 1;
+  font-weight: 700;
+}
+.title span {
+  font-size: 0.875em;
+  font-style: italic;
+}
+
+.caracteristicas {
+  display: flex;
+  color: #b07dfb;
+  align-items: flex-start;
+}
+
+.caracteristicas span {
+  display: block;
+}
+
+.caracteristicas > div {
+  width: 80px;
+  text-align: center;
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
+  position: relative;
+}
+
+.caracteristicas > div:first-child {
+  margin-right: 30px;
+}
+
+.numero {
+  font-size: 3em;
+  line-height: 1;
+  margin: 10px auto;
+}
+
+.rotulo {
+  background-color: #fff;
+  border-radius: 0 0 5px 5px;
+  padding: 5px 0;
+  position: relative;
+  top: 2px;
+}
+
+.destaque {
+  font-size: 0.875em;
+  color: #b07dfb;
+  max-width: 26ch;
+}
+
+.citacao,
+.attributes {
+  padding: 30px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
+  box-shadow: 5px 5px 15px 0 rgba(44, 44, 44, 0.15);
+  align-self: start;
+}
+
+.citacao p {
+  font-size: 1.5em;
+  font-style: italic;
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.attributes li {
+  color: #fff;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.15em;
+  padding: 15px;
+}
+
+.attributes li + li {
+  border-top: 2px solid #b07dfb;
+}
